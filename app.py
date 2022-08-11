@@ -2,6 +2,9 @@ import numpy as np
 import pickle
 import streamlit as st
 
+
+
+
 loaded_model = pickle.load(open(r"xgboost_trained.sav","rb"))
 
 scaler = pickle.load(open(
