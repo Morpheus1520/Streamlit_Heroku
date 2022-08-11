@@ -2,43 +2,24 @@ import numpy as np
 import pickle
 import streamlit as st
 
-
-
-
 loaded_model = pickle.load(open(r"xgboost_trained.sav","rb"))
 
-scaler = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\data_scaler.pkl",
-    "rb"))
+scaler = pickle.load(open(r"data_scaler.pkl","rb"))
 
 # Lets load all the encoders:
-enc1 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Item_Identifier_encoder.pkl",
-    "rb"))
+enc1 = pickle.load(open(r"Item_Identifier_encoder.pkl","rb"))
 
-enc2 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Item_Fat_Content_encoder.pkl",
-    "rb"))
+enc2 = pickle.load(open(r"Item_Fat_Content_encoder.pkl","rb"))
 
-enc3 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Item_Type_encoder.pkl",
-    "rb"))
+enc3 = pickle.load(open(r"Item_Type_encoder.pkl","rb"))
 
-enc4 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Outlet_Identifier_encoder.pkl",
-    "rb"))
+enc4 = pickle.load(open(r"Outlet_Identifier_encoder.pkl","rb"))
 
-enc5 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Outlet_Size_encoder.pkl",
-    "rb"))
+enc5 = pickle.load(open(r"Outlet_Size_encoder.pkl","rb"))
 
-enc6 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Outlet_Location_Type_encoder.pkl",
-    "rb"))
+enc6 = pickle.load(open(r"\Outlet_Location_Type_encoder.pkl","rb"))
 
-enc7 = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\Outlet_Type_encoder.pkl",
-    "rb"))
+enc7 = pickle.load(open(r"Outlet_Type_encoder.pkl","rb"))
 
 
 # Creating a function for prediction
