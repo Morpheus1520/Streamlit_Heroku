@@ -17,7 +17,7 @@ enc4 = pickle.load(open(r"Outlet_Identifier_encoder.pkl","rb"))
 
 enc5 = pickle.load(open(r"Outlet_Size_encoder.pkl","rb"))
 
-enc6 = pickle.load(open(r"\Outlet_Location_Type_encoder.pkl","rb"))
+enc6 = pickle.load(open(r"Outlet_Location_Type_encoder.pkl","rb"))
 
 enc7 = pickle.load(open(r"Outlet_Type_encoder.pkl","rb"))
 
