@@ -2,9 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-loaded_model = pickle.load(open(
-    r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\xgboost_trained.sav",
-    "rb"))
+loaded_model = pickle.load(open(r"xgboost_trained.sav","rb"))
 
 scaler = pickle.load(open(
     r"C:\Users\Huzefa\Machine Learning Jupyter notebook\End-To-End Projects\Big_mart Sales Prediction\data_scaler.pkl",
