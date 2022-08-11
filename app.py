@@ -100,7 +100,7 @@ def main():
                 [item_identifier, item_Weight, item_fat, Item_Visibility, Item_Type, Item_MRP, Outlet_Identifier,
                  Outlet_Establishment_Year, Outlet_Size, Outlet_Location_Type, Outlet_Type])
 
-    st.success(final_sales_prediction)
+    st.success("Item outlet sales = {}".format(final_sales_prediction))
 
 
 if __name__ == '__main__':
